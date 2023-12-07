@@ -5,7 +5,7 @@
     font-family: 'poppins', sans-serif;
 }
 
-header {
+.menu {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -19,10 +19,14 @@ header {
 
 .horizontal {
     border-bottom: 1px solid lightgray;
-    padding: 20px;
-    left: 0;
-    right: .0;
-    position: fixed;
+    padding-top: 20px;
+    /* left: 0; */
+    /* right: 0; */
+    /* position: fixed; */
+}
+
+.nav {
+    display: none;
 }
 
 .menu-search {
@@ -58,14 +62,14 @@ header {
 }
 
 .page-begins {
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .dashboard {
     font-size: 25px;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 
@@ -130,7 +134,7 @@ header {
 
 .third-div {
     background: rgb(252, 187, 252);
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -181,8 +185,9 @@ header {
 }
 
 .fifth-div h1 {
-    font-size: 16px;
-    padding-bottom: 15px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
 }
 
 .flex-it {
@@ -389,18 +394,19 @@ header {
     padding: 10px;
 }
 
-.third-flex {
-    display: flex;
-    justify-content: space-between;
-}
-
 .fourth {
     padding: 10px;
     margin-bottom: 25px;
 }
 
-.flex3, .flex4 {
+.flex-one, .flex3, .flex4 {
     display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.flex-one p, .flex3 p, .flex4 p {
+    font-size: 10px;
 }
 
 .button3 {
@@ -426,4 +432,93 @@ header {
 
 .other, .priority {
     padding-bottom: 5px;
+}
+
+.menu-search {
+    display: none;
+}
+
+@media (min-width: 810px) {
+    .wrapper {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .nav {
+        display: block;
+        background: rgb(238, 237, 237);
+        padding: 20px;
+    }
+
+    .menu-search {
+        padding-bottom: 20px;
+        display: block;
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+    }
+
+    .search {
+        /* align-items: center; */
+    }
+
+    .menu-one {
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+    }
+
+    .horizontal {
+        /* display: none; */
+    }
+
+    .navigate {
+        display: none;
+    }
+
+    .menu-listed {
+        padding-top: 50px;
+        font-size: 10px;
+        text-align: center;
+        color: rgb(147, 145, 145);
+    }
+
+    .h1 {
+        padding-top: 50px;
+        font-size: 30px;
+    }
+
+    .ri-layout-masonry-fill, .ri-user-add-fill, .ri-calendar-event-line, .ri-team-fill, .ri-record-circle-fill, .ri-customer-service-line, .ri-settings-3-fill, .ri-menu-line, .ri-search-line {
+        font-size: 25px;
+        padding-top: 30px;
+        color: rgb(147, 145, 145);
+    }
+
+    .ri-layout-masonry-fill {
+        color: rgb(249, 56, 56);
+    }
+
+    .other {
+        padding-top: 60px;
+        text-align: center;
+        font-size: 10px;
+        color: rgb(147, 145, 145);
+    }
+
+    .card-div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+    }
+    
+
 }
